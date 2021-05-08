@@ -118,7 +118,6 @@ class HashMap:
             self._buckets.append(LinkedList())
         self.size = 0
 
-        # FIXME: Write this function
 
     def get(self, key):
         """
@@ -136,7 +135,6 @@ class HashMap:
         else:
             return None
 
-        # FIXME: Write this function
     def get_index_val(self, key):
         hash_key = self._hash_function(key)
         index = hash_key % self.capacity
